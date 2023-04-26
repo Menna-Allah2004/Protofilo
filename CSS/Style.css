@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #FF6464;
+    --secondary-color: #00A8CC;
+    --Dark-color: #21243D;
+    --light-color: #8695A4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo';
+    font-size: 16PX;
+}
+
+header{
+    height: 100vh;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+}
+
+header nav ul{
+    margin-top: 2%;
+    margin-right: 4%;
+    align-items: stretch;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover{
+    transform: none;
+    transition: 1s;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btn-header{
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    color: white;
+    border: none;
+}
+@media only screen and (max-width: 300px) {
+    header{
+        float: left;
+        width: 95%;
+    }
+    header nav{
+        flex-flow: column wrap;
+    }
+    .container .left-item img{
+        float: right;
+    }
+}
+
+main{
+    margin-left: 146px;
+    margin-top: 15px;
+    color: var(--Dark-color);
+}
+
+.section-start{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.section-start .right-section{
+    flex-basis: 30%;
+}
+
+.section-start .right-section img{
+    border-radius: 2px;
+}
+
+.section-start .left-section{
+    flex-basis: 80%;
+    margin-left: 20px;
+    padding-right: 180px;
+}
+
+hr{
+    color: #E0E0E0;
+}
+
+@media only screen and (max-width: 300px){
+    main{
+        width: 90%;
+    }
+}
+footer{
+    margin: 10% auto 5% auto;
+    text-align: center;
+    color: var(--Dark-color);
+}
+
+footer div i{
+    width: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+button:hover{
+    transform: none;
+    transition: 1s;
+    color: var(--Dark-color);
+    background-color: var(--light-color);
+    text-decoration: none;
+}
